@@ -303,8 +303,8 @@ img.amy{
 
 .column{
 	float: left;
-	width: 33%;	
-	padding-right: 20px;
+	width: 31%;	
+	margin-right: 3%;
 }
 
 .action{
@@ -355,7 +355,7 @@ img.amy{
 
 .wordpress{
 	float: left;
-	max-width: 33%;	
+	max-width: 32%;	
 	background: white;
 	margin-top: -20px;
 	padding: 20px;
@@ -517,10 +517,6 @@ img.amy{
 		margin-left: -15px;
 	}
 
-/*	img.amy{
-		max-width:50%;
-	}*/
-
 
 	/*
 	Navigation for Tablet/Mobile ________________________________
@@ -528,50 +524,35 @@ img.amy{
 
 	nav{
 		display: block;
+		margin: 0;
+		padding: 0;
 	}
 
-	nav .btn{
-	 	width: 20px;
-	 	height: 20px;
-		box-shadow: 0 0 3px rgba(0,0,0,0.2);
+	ul.visible{
 		display: block;
-		top: 22px;
-		right: 35px;
-		position: absolute;
-	 }
-
-	nav .btn span{
-		background: #FFF;
-		width: 24px;
-		height: 3px;
-		margin-top: 5px;
-		display: block;
-		z-index: inherit;
+		z-index: 9999999;
 	}
 
-	nav .btn span:first-child{
-		margin-top: 0;
+	nav a.dropDown{
+		color: #00e1db;
+		font-size: 30px;
+		position: relative;
+		top: 15px;
+		right:0px;
+		float: right;
 	}
 
-	nav .btn:hover span{
-		background: #00e1db;
-	}
 
 	nav ul{
 		float: right;
 		list-style: none;
 		display: none;
 		position: absolute;
-		top: 62px;
+		top: 70px;
 		right: 18px;
-	}
+		z-index: 10;
+		width: 100px;
 
-	input[type="checkbox"]:checked + ul{
-		display: block;
-	}
-
-	input.toggle[type="checkbox"]{
-		display: none;
 	}
 
 	/*Make the checkbox disappear*/
@@ -586,6 +567,7 @@ img.amy{
 		font-size: 15px;
 		text-decoration: none;
 		border-bottom: 1px solid white;
+		border-left: 1px solid white;
 	}		
 
 	nav ul li a:hover{
@@ -636,10 +618,14 @@ img.amy{
 		padding: 20px 0;
 	}
 
-	.connect .column{
-		width: 50%;
+	.column{
+		width: 48%;
 	}
 
+	.column.right{
+		margin-right: 0;
+	}
+	
 	.wordpress{
 		max-width: 100%;	
 		margin-top: 20px;
@@ -705,9 +691,9 @@ img.amy{
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-		
-	.header ul{
-		display: none;
+
+	nav ul{
+		top: 63px;
 	}
 
 	.header{
@@ -770,15 +756,11 @@ img.amy{
 		display: inline;
 	}
 
-	.first, .second, .third{
-		width: 100%;
-	}
-
 	.info{
 		max-width: 100%;
 	}
 
-	.connect .column{
+	.column{
 		width: 100%;
 		padding: 0;
 	}
@@ -795,6 +777,14 @@ img.amy{
 	.connect{
 		padding: 60px 0 25px 0;
 	}
+
+	.first{
+		max-width: 100%;
+	}
+
+	.second{
+		max-width: 100%;
+	}
 }
 
 
@@ -809,18 +799,6 @@ img.amy{
 		line-height: 120%;
 	}
 
-	.first{
-		width: 170%;
-	}
-
-	.second{
-		width: 170%;
-	}
-
-	.third{
-		width: 170%;
-	}
-
 	img.amy{
 		max-width: 110%;
 		position: relative;
@@ -829,6 +807,7 @@ img.amy{
 	.about{
 		padding-bottom: 0;
 	}
+
 }
 
 @media (max-width: 240px) {

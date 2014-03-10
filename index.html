@@ -31,27 +31,21 @@
 		<div class="innerwrapper clearfix">
 			<div class="logo"><a href="index.html"><img src="images/logo.png" alt="Amy Allen's Logo"></a>
 			</div>
+
 			<ul><!-- desktop navigation -->
 				<li><a class="nav" href="#profile">Profile</a></li>
 				<li><a class="nav" href="#about">About</a></li>
 				<li><a class="nav" href="#contact">Contact</a></li>
 				<li><a class="nav" href="http://www.amyallendesign.wordpress.com" target="_blank">Blog</a></li>
 			</ul>
-
-			<nav><!-- mobile navigation -->
-				<label for="toggle">
-					<div class="btn">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</label>
-				<input class="toggle" type="checkbox" id="toggle">
+			
+			<nav>
+			<a href="#" class="dropDown">☰</a>
 				<ul>
 					<li><a class="nav" href="#profile">Profile</a></li>
 					<li><a class="nav" href="#about">About</a></li>
 					<li><a class="nav" href="#contact">Contact</a></li>
-					<li><a class="nav last" href="http://www.amyallendesign.wordpress.com" target="_blank">Blog</a></li>
+					<li><a class="nav" href="http://www.amyallendesign.wordpress.com" target="_blank">Blog</a></li>
 				</ul>
 			</nav>
 		</div><!-- .innerwrapper -->
@@ -114,30 +108,36 @@
 		<div class="innerwrapper clearfix">
 			<h2>Let's Connect</h2>
 			<div class="column">
-				<p class="allen white"><a href="mailto:hello@amyallen.ca">H</a></p>
-				<p class="action">Say Hello!</p>
-				<p class="social"><a href="mailto:hello@amyallen.ca">Email Amy</a></p>
-				
-				<p class="allen white"><a href="https://twitter.com/inquisitive_amy">E</a></p>
-				<p class="action">Follow me on Twitter</p>
-				<p class="social"><a href="https://twitter.com/inquisitive_amy">@inquisitive_amy</a></p>
+				<div>
+					<p class="allen white"><a href="mailto:hello@amyallen.ca">H</a></p>
+					<p class="action">Say Hello!</p>
+					<p class="social"><a href="mailto:hello@amyallen.ca">Email Amy</a></p>
+				</div>	
+				<div>
+					<p class="allen white"><a href="https://twitter.com/inquisitive_amy">E</a></p>
+					<p class="action">Follow me on Twitter</p>
+					<p class="social"><a href="https://twitter.com/inquisitive_amy">@inquisitive_amy</a></p>
+				</div>
 			</div><!-- .column -->
 
-			<div class="column">				
-				<p class="allen white"><a href="https://github.com/inquisitive-amy">F</a></p>
-				<p class="action">View my dev work</p>
-				<p class="social"><a href="https://github.com/inquisitive-amy">on Github</a></p>
-
-				<p class="allen white"><a href="http://codepen.io/amyallen/">G</a></p>
-				<p class="action">Check out my experiments</p>
-				<p class="social last"><a href="http://codepen.io/amyallen/">on Codepen</a></p>
+			<div class="column right">			
+				<div>
+					<p class="allen white"><a href="https://github.com/inquisitive-amy">F</a></p>
+					<p class="action">View my dev work</p>
+					<p class="social"><a href="https://github.com/inquisitive-amy">on Github</a></p>
+				</div>	
+				<div>
+					<p class="allen white"><a href="http://codepen.io/amyallen/">G</a></p>
+					<p class="action">Check out my experiments</p>
+					<p class="social last"><a href="http://codepen.io/amyallen/">on Codepen</a></p>
+				</div>
 			</div><!-- .column -->
 			
 			<div class="wordpress">
 				<p class="allen blog"><a href="http://amyallendesign.wordpress.com/">I</a></p>
 				<p>Visit my Blog</p>
 				<p class="social"><a href="http://amyallendesign.wordpress.com/">on Wordpress</a></p>
-				<p>It's where I will be sharing my expereince of learning and refining front-end development skills and topics like resources, web design, and my involvement in the tech community.</p>
+				<p>It's where I will be sharing my expereince of learning and refining front-end development skills and topics like resources, web design and my involvement in the tech community.</p>
 			</div><!-- .wordpress -->
 		</div><!-- innerwrapper -->		
 	</div><!-- .connect -->
@@ -149,15 +149,9 @@
 	</div> <!-- footer -->
 
 	<!-- Load JavaSCript -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/jquery.smooth-scroll.min.js"></script>
-	<script>
-		$(function() {
-			// document ready
-			$('a.nav').smoothScroll({
-				offset: -62,
-			});
-		});
-	</script>
+	<script src="js/script.js"></script>
+
 	</body>
 </html>
