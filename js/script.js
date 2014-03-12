@@ -9,10 +9,11 @@ $(document).ready(function(){
 
 
 	//dropdown nav menu
-	$('a.dropDown').on('click', function(e){
-		e.preventDefault();
-		var href = $('nav ul');
-		href.toggleClass('visible');
+	$('a.dropDown').on('click', function(){
+		$('nav ul').slideToggle('slow','swing');
 	});//end open nav drop down
 
 });//end document ready
+
+
+
